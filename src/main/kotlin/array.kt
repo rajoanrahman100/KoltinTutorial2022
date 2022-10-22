@@ -9,9 +9,10 @@ fun main() {
     println()
     for (i in arrayNameThree.indices) {
         print(arrayNameThree[i])
+
     }
     println()
-    arrayNameTwo.forEach { index ->
-        print(index)
+    arrayNameTwo.forEach { value ->
+        print(value)
     }
 }
