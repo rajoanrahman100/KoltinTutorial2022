@@ -4,26 +4,43 @@ package interface_example
 //abstract function
 //java 8-->can be declared static function and default
 
-interface A{
+interface A {
 
     fun show()
+    fun sum(){
+        println("Sum of 1 and 2 is: ${1+2}")
+    }
 }
 
-interface B{
+interface B {
     fun display()
+
+    fun sum(){
+        println("Sum of 2 and 3 is: ${2+3}")
+    }
 }
 
-class C:A,B{
+class C : A, B {
     override fun show() {
-        TODO("Not yet implemented")
+        println("Show Function")
     }
 
     override fun display() {
-        TODO("Not yet implemented")
+        println("Display Function")
     }
+
+    override fun sum() {
+        super<A>.sum()//Calling the sum() fun of A interface
+        super<B>.sum()//Calling the sum() fun of B interface
+    }
+
+
 
 }
 
 fun main() {
-
+    var c=C()
+    c.show()
+    c.display()
+    c.sum()
 }
