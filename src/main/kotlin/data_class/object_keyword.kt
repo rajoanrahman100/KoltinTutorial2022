@@ -10,8 +10,10 @@ object AbcInstitution {
 }
 
 fun main() {
+
     AbcInstitution.students.add(Student("Rifat", 27))
     AbcInstitution.students.add(Student("Bristy", 23))
+    AbcInstitution.students.add(Student("Sakib", 15))
 
     for (i in AbcInstitution.students) {
         println(i)

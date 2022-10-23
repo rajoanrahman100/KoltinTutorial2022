@@ -14,5 +14,7 @@ fun main() {
 
 }
 
-//Todo:If we want to compare two objet to see equal or not, we can put data before class name
-//Todo: If we want to print the primary constructor value of a class, we can put data and print the object of that class
+/**
+ * If we want to compare two objet to see equal or not, we can put data before class name
+ * If we want to print the primary constructor value of a class, we can put data and print the object of that class
+ */
