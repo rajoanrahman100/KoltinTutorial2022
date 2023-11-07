@@ -7,7 +7,7 @@ fun main() {
         println(" $i ")
     }
 
-    for (i in 5 downTo 1) { //print value in every two steps
+    for (i in 5 downTo 1) { 
         println(" $i ")
     }
 
